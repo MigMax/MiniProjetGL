@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="miniprojet" version="3">
+  <DEPS>
+    <ID name="miniprojet" mc="Package" uid="d1b212bb-36c1-4416-b978-7390500b3fb3"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="3f3f05fa-c046-4116-9dd5-803fe184b75a"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="miniprojet" mc="Package" uid="d1b212bb-36c1-4416-b978-7390500b3fb3"/>
+    <PID name="MiniProjet" mc="Project" uid="32146edc-9d3d-4a4d-9b11-c07b4d53564f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[miniprojet]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="3f3f05fa-c046-4116-9dd5-803fe184b75a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MiniProjet" version="3">
+  <DEPS>
+    <ID name="MiniProjet" mc="Project" uid="32146edc-9d3d-4a4d-9b11-c07b4d53564f"/>
+    <COMPID name="MiniProjet" mc="DiagramSet" uid="19ee91cd-b38a-478d-81ec-a0afca4a0e57"/>
+    <COMPID name="miniprojet" mc="Package" uid="d1b212bb-36c1-4416-b978-7390500b3fb3"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="MiniProjet" mc="Project" uid="32146edc-9d3d-4a4d-9b11-c07b4d53564f"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[MiniProjet]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="MiniProjet" mc="DiagramSet" uid="19ee91cd-b38a-478d-81ec-a0afca4a0e57"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="miniprojet" mc="Package" uid="d1b212bb-36c1-4416-b978-7390500b3fb3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
