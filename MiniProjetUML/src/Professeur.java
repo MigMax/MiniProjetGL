@@ -1,88 +1,44 @@
-import java.util.*;
+import java.util.ArrayList;
+
 public class Professeur {
 	
-	// Variables 
+	private ArrayList<Etudiant> mesEtudiants;
 	
-	
-	private ArrayList <Etudiant>tabEtu;
-	private String nom;
-	private String prenom;
-	
-	
-	
-	//Getters and Setters
-	
-	
-	public ArrayList<Etudiant> getTabEtu() {
-		return tabEtu;
-	}
-	public void setTabEtu(ArrayList<Etudiant> tabEtu) {
-		this.tabEtu = tabEtu;
-	}
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-	public String getPrenom() {
-		return prenom;
-	}
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
+	public Professeur(ArrayList<Etudiant> lesEtudiants){
+		this.mesEtudiants=lesEtudiants;
 	}
 	
-	
-	// Constructeur 
-	
-
-	
-	public Professeur(String nom , String prenom , ArrayList<Etudiant> tabEtu){
-		
-		this.nom=nom;
-		this.prenom=prenom;
-		this.tabEtu=tabEtu;
-		
-	
-	}
-		
 	public Professeur(){
-		
-		
-		this.nom=" ";
-		this.prenom=" ";
-		this.tabEtu= new ArrayList();
-		
-		
-		
+		this.mesEtudiants= new ArrayList<Etudiant>();
 	}
 	
-	
-	// Methodes
-	
-	public void ajouterNote(float note, int id ){
+	public void listeMesEtudiant(){
 		
-		for(Etudiant etu : tabEtu){
-			
-			if (etu.getId()==id){
-				
-				etu.getTabnote().add(note);
-				
-			}
-			
-			
+		System.out.print("Liste de mes Etudiant :\n");
+		for(Etudiant etudiant:this.mesEtudiants){
+		System.out.println(etudiant.getNom()+" "+etudiant.getPrenom()+" Moyenne :"+etudiant.getMoyenne());
 		}
 		
-		
 	}
 	
-	
-	
- 	public String toString (){
-		
-		String s = "Professeur : Nom= "+this.nom+" Prenom = "+this.prenom+this.getTabEtu().toString();
-		
-		return s;
-		
+	public void afficherTousLesEtudiants(ArrayList<Etudiant> lesEtudiants){
+		for(Etudiant etudiant:lesEtudiants){
+			System.out.println(lesEtudiants.indexOf(etudiant)+"-"+etudiant.getNom()+" "+etudiant.getPrenom()+" Moyenne :"+etudiant.getMoyenne());
+			}
 	}
+	
+	public Etudiant ajouterUnEtudiant(String nom, String prenom, String id, String password ,ArrayList<Etudiant> desEtudiants){
+		Etudiant etu = new Etudiant(nom, prenom, id, password);
+		desEtudiants.add(new Etudiant(nom, prenom, id, password));
+		return etu;
+	}
+	
+	public boolean editerNote(Note note, float nouvelleNote){
+		if(nouvelleNote>=0 && nouvelleNote>=20){
+			note.setValue(nouvelleNote);
+			return true;
+		}
+		return false;
+	}
+
 }
